@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Triangle Tracker</title>
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/bootstrap.css/">
   <script src ="js/scripts.js"></script>
 </head>
 <body>
+  <h1>The Triangle Tracker From Hell</h1>
   <form id="tracker">
     <label for="sideA">Enter first side here:</label>
     <input id="sideA" type="number">
@@ -17,20 +17,21 @@
     <label for="sideC">Enter third side here:</label>
     <input id="sideC" type="number">
     <button type="submit">Submit</button>
+    <button id="reset" type="reset">Reset</button>
   </form>
 
-  <div class="equilateral hidden">
+  <div id="equilateral" class="hidden">
     <p>You created an equilateral triangle! All sides are equal.</p>
   </div>
-  <div class="isosceles hidden">
+  <div id="isosceles" class="hidden">
     <p>You created an isosceles triangle! Exactly two sides are equal. </p>
   </div>
-  <div class="scalene hidden">
+  <div id="scalene" class="hidden">
     <p>You created a scalene triangle! No sides are equal.</p>
   </div>
-  <div class="not-triangle hidden"></div>
+  <div id="not-triangle" class="hidden">
   <p>You did not create a triangle. The sum of any two sides of a triangle is greater than its third side.</p>
-  <script src ='js/bootstrap.js/'></script>
+  </div>
 </body>
 </html>
 
